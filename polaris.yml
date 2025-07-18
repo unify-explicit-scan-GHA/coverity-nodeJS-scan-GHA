@@ -1,0 +1,16 @@
+version: "1"
+project:
+  name: coverity-nodeJS-scan
+  branch: main
+  revision:
+    name: HEAD
+    date: "2025-07-18T00:00:00Z"
+capture:
+  coverity:
+    autoCapture: enable
+analyze:
+   mode: central
+install:
+  coverity:
+    version: default
+serverUrl: https://cloudbees.polaris.synopsys.com
